@@ -1,126 +1,39 @@
-@charset "UTF-8";
+/* Update all instances of the color to #df9315 */
 
-/* Base styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F0F0F0; /* Light gray background */
+    background-color: #f8f9fa;
 }
 
-/* Header and footer styles */
-header, footer {
-    background-color: #000; /* Black background */
-    color: #FFF; /* White text */
-    padding: 1rem;
-    text-align: center;
-}
-
-/* Navbar styles */
 .navbar {
-    margin-bottom: 1rem;
+    background-color: #000; /* Dark background for navbar */
 }
 
-.navbar-nav .nav-link {
-    color: #FFF;
+.navbar-brand {
+    color: #df9315; /* Updated brand color */
 }
 
-.navbar-nav .nav-link:hover {
-    color: #CCC;
+.navbar-dark .navbar-nav .nav-link {
+    color: #df9315; /* Updated link color in navbar */
 }
 
-/* Card styles */
-.card {
-    border: none;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff; /* White color on hover for better contrast */
 }
 
-.card-img-top {
-    height: 150px; /* Adjusted height for better visibility */
-    object-fit: cover;
+.header {
+    background-color: #df9315; /* Updated header background color */
 }
 
-.card-body {
-    background-color: #FFF; /* White for card body */
-    padding: 1rem;
+.btn-outline-dark {
+    color: #df9315; /* Updated button color */
+    border-color: #df9315; /* Updated button border color */
+}
+
+.btn-outline-dark:hover {
+    background-color: #df9315; /* Updated button background on hover */
+    color: #fff; /* White text color on hover */
 }
 
 .card-title {
-    font-size: 1.25rem;
-    color: #333; /* Dark text for contrast */
-}
-
-.card-text {
-    font-size: 1rem;
-    color: #666; /* Gray text */
-}
-
-/* Button styles */
-.btn-success {
-    background-color: #000; /* Black background for buttons */
-    border-color: #000;
-    color: #FFF; /* White text on button */
-}
-
-.btn-success:hover {
-    background-color: #333; /* Dark gray for hover effect */
-    border-color: #333;
-}
-
-/* Animation styles */
-.animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
-.bounce {
-    animation-name: bounce;
-}
-
-.pulse {
-    animation-name: pulse;
-}
-
-.shake {
-    animation-name: shake;
-}
-
-/* Keyframes */
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-30px);
-    }
-    60% {
-        transform: translateY(-15px);
-    }
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes shake {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    10%, 30%, 50%, 70%, 90% {
-        transform: translateX(-10px);
-    }
-    20%, 40%, 60%, 80% {
-        transform: translateX(10px);
-    }
+    font-size: 1.25rem; /* Adjust product title size */
 }
