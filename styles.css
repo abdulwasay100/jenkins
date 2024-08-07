@@ -16,6 +16,19 @@ header, footer {
     text-align: center;
 }
 
+/* Navbar styles */
+.navbar {
+    margin-bottom: 1rem;
+}
+
+.navbar-nav .nav-link {
+    color: #FFF;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #CCC;
+}
+
 /* Card styles */
 .card {
     border: none;
@@ -26,7 +39,7 @@ header, footer {
 }
 
 .card-img-top {
-    height: 150px; /* Reduced height */
+    height: 150px; /* Adjusted height for better visibility */
     object-fit: cover;
 }
 
